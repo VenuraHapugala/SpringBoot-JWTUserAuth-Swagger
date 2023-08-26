@@ -7,7 +7,10 @@ import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import io.swagger.v3.oas.annotations.servers.Server;
-
+/**
+ * Configuration class for OpenAPI documentation setup.
+ * This class defines the OpenAPI definition, security schemes, and server information.
+ */
 @OpenAPIDefinition(
         info = @Info(
 

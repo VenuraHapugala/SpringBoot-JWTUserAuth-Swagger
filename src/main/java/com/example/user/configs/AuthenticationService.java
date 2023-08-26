@@ -1,6 +1,5 @@
 package com.example.user.configs;
 
-
 import com.example.user.models.User;
 import com.example.user.payload.AuthenticationRequest;
 import com.example.user.payload.AuthenticationResponse;
@@ -12,6 +11,10 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+/**
+ * Service class responsible for user authentication and registration processes.
+ */
 
 @Service
 @RequiredArgsConstructor
@@ -50,5 +53,4 @@ public class AuthenticationService {
                 .accessToken(jwtToken)
                 .build();
     }
-
 }
